@@ -36,7 +36,7 @@ public class Animal {
          if (motility = true) {
              int range = (space - 1) + 1;     
              location = (int)(Math.random() * range) + 1;
-             System.out.print("Animal moved to " + location);
+             System.out.print("Animal moved to " + location + " point.");
          }
          return location;
     }
