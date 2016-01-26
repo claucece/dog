@@ -1,4 +1,4 @@
-public class Animal {
+abstract public class Animal {
     
     private String size;
     private String trinomialName;
@@ -34,8 +34,9 @@ public class Animal {
     public int roam(int space) {
          int location = 0;
          if (motility = true) {
-             int range = (space - 1) + 1;     
-             location = (int)(Math.random() * range) + 1;
+             int range = (space - 1) + 1;    
+             location = (int)(Math.random() * range);
+             // location = (int)(Math.random() * range) + 1;
              System.out.print("Animal moved to " + location + " point.");
          }
          return location;
