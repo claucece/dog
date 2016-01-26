@@ -1,7 +1,7 @@
 public interface Pet {
     
-    public abstract void beFriendly();
+    public abstract String beFriendly();
 
-    public abstract void play();
+    public abstract String play();
 
 } 

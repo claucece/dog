@@ -1,4 +1,4 @@
-public class Dog extends Animal {
+public class Dog extends Animal implements Pet {
    
     String trinomialName = "Dog";
     String size = "big";
@@ -10,6 +10,14 @@ public class Dog extends Animal {
     int height = 640;
     int width =  480;
     int space = setSpace(height, width);
-         
+    
+    public String beFriendly() {
+        return "Dog is friendly";
     }
+    
+    public String play() {
+        return "Dog is playfull";
+    }
+ 
+}
      
