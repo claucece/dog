@@ -46,5 +46,5 @@ public class Dog extends Animal implements Pet {
         public void sleep() { 
         System.out.println(sleep);
     }
-
+   
 }

@@ -22,12 +22,12 @@ abstract public class Animal {
         size = startSize;
         trinomialName = startTrinomialName;
         noise = startNoise;
-        motility = startMotility;
+        this.motility = motility;
         
     }
     
     public String getTrinomialName() {
-         return trinomialName;
+        return trinomialName;
      } 
 
     public String getSize() { 
