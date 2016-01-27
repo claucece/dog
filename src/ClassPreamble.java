@@ -1,3 +1,6 @@
+import java.lang.annotation.*;
+
+@Documented
 @interface ClassPreamble {
    String author();
    String date();

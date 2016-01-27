@@ -32,8 +32,7 @@ abstract public class Animal {
         return food;
     }
 
-    public void sleep() {
-    }
+    abstract public void sleep();
 
     public int setSpace(int height, int width) {
          int space = height * width;
