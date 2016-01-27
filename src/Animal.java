@@ -1,3 +1,12 @@
+@ClassPreamble (
+   author = "Sofia Celi",
+   date = "26/01/2016",
+   currentRevision = 5,
+   lastModified = "27/01/2016",
+   lastModifiedBy = "Sofia Celi",
+   reviewers = {"Cris"}
+)
+
 abstract public class Animal {
     
     private String size;
