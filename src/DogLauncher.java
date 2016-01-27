@@ -11,6 +11,7 @@ public class DogLauncher {
         System.out.println();
         System.out.println(balto.beFriendly());
         System.out.println(balto.play());
-        
+        System.out.println("The id of " + balto.trinomialName + " is " + balto.getID()); 
+        System.out.println("Number of dogs created so far " + Dog.getNumberOfDogs()); 
     }
 }

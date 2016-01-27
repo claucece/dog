@@ -11,13 +11,24 @@ public class Dog extends Animal implements Pet {
     int width =  480;
     int space = setSpace(height, width);
     
+    private static int numberOfDogs = 0;
+    
+    private int id = ++numberOfDogs;
+
     public String beFriendly() {
-        return "Dog is friendly";
+        return "Dog is friendly.";
     }
     
     public String play() {
-        return "Dog is playfull";
+        return "Dog is playfull.";
     }
- 
+    
+    public int getID() {
+        return id;
+    }
+    
+    public static int getNumberOfDogs() {
+        return numberOfDogs;
+    }
 }
      
