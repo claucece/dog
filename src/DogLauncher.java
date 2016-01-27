@@ -9,6 +9,7 @@ public class DogLauncher {
         System.out.println("What is the space in which the dog lives? " +  balto.setSpace(balto.height, balto.width) + " meters.");
         balto.roam(balto.space);
         System.out.println();
+        System.out.println(balto.trinomialName + " name is: " + balto.setName(balto.name));
         System.out.println(balto.beFriendly());
         System.out.println(balto.play());
         System.out.println("The id of " + balto.trinomialName + " is " + balto.getID()); 
