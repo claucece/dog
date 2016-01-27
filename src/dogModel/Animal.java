@@ -1,3 +1,5 @@
+package dogModel;
+
 @ClassPreamble (
     author = "Sofia Celi",
     date = "26/01/2016",
@@ -9,18 +11,28 @@
 
 abstract public class Animal {
     
-    private String size;
-    private String trinomialName;
-    private String noise;
+    private String size, trinomialName, noise;
     private boolean motility;
-     
+       
+    public Animal(String startSize,
+               String startTrinomialName,
+               String startNoise,
+               boolean startMotility
+               ) {
+        size = startSize;
+        trinomialName = startTrinomialName;
+        noise = startNoise;
+        motility = startMotility;
+        
+    }
+    
+    public String getTrinomialName() {
+         return trinomialName;
+     } 
+
     public String getSize() { 
         return size;
     }
-
-    public String getName() {
-        return trinomialName;
-    } 
 
     public String makeNoise() {
         return noise;

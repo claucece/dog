@@ -1,3 +1,5 @@
+package dogModel;
+
 import java.lang.annotation.*;
 
 @Documented

@@ -1,3 +1,5 @@
+package dogModel;
+
 public interface Pet {
     
     public abstract String setName(String name);
