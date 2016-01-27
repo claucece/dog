@@ -1,10 +1,10 @@
 @ClassPreamble (
-   author = "Sofia Celi",
-   date = "26/01/2016",
-   currentRevision = 5,
-   lastModified = "27/01/2016",
-   lastModifiedBy = "Sofia Celi",
-   reviewers = {"Cris"}
+    author = "Sofia Celi",
+    date = "26/01/2016",
+    currentRevision = 5,
+    lastModified = "27/01/2016",
+    lastModifiedBy = "Sofia Celi",
+    reviewers = {"Cris"}
 )
 
 abstract public class Animal {
@@ -35,7 +35,7 @@ abstract public class Animal {
     public void sleep() {
     
     }
-
+    
     public int setSpace(int height, int width) {
          int space = height * width;
          return space;
@@ -45,12 +45,10 @@ abstract public class Animal {
          int location = 0;
          if (motility = true) {
              int range = (space - 1) + 1;    
-             location = (int)(Math.random() * range);
-             // location = (int)(Math.random() * range) + 1;
+             location = (int)(Math.random() * range) + 1;
              System.out.print("Animal moved to " + location + " point.");
          }
          return location;
     }
          
-
 }

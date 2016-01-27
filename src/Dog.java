@@ -35,5 +35,6 @@ public class Dog extends Animal implements Pet {
     public static int getNumberOfDogs() {
         return numberOfDogs;
     }
+
 }
      
