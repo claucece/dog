@@ -8,12 +8,13 @@ public class DogLauncher {
         System.out.println("Default's dog size is " + fido.getSize());
         System.out.println("=====================================");
         System.out.println("Let's create a non-default new animal");
-        Dog balto = new Dog("big", "Dog", "Ruff, Ruff!", "fressen", true, false, false);
+        Dog balto = new Dog("big", "Dog", "Ruff, Ruff!", "fressen", true, false, true);
         System.out.println("The animal class is " + balto.getTrinomialName());
         System.out.println("The animal size is " + balto.getSize());
         System.out.println(balto.getTrinomialName() + " barks and says: " + balto.makeNoise());
         balto.eat();
         System.out.println("The space that surrounds the dog is " + balto.setSpace(640, 480) + " meters");
+        balto.roam();
         //System.out.print("Is " +  balto.getTrinomialName() + " sleeping? "); 
         //balto.sleep();
         //System.out.println("What is the space in which the dog lives? " +  balto.setSpace(balto.height, balto.width) + " meters.");

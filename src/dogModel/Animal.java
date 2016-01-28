@@ -65,21 +65,14 @@ abstract public class Animal extends Space {
 
     abstract public void sleep();
    
-    // create new class with this two methods 
- 
-    // public int setSpace(int height, int width) {
-    //     int space = height * width;
-    //     return space;
-    // }     
-         
-    // public int roam(int space) {
-    //     int location = 0;
-    //     if (motility) {
-    //         int range = (space - 1) + 1;    
-    //         location = (int)(Math.random() * range) + 1;
-    //         System.out.print("Animal moved to " + location + " point.");
-    //     }
-    //     return location;
-    //  }
+    public int roam() {
+        if (motility) {
+            setLocation(Space.space);
+            System.out.print("Animal moved to " + location + " point.");
+        } else {
+            System.out.print("Animal doesn't have the capacity to move");
+        }  
+        return location;
+    }
          
 }
