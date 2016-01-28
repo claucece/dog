@@ -11,7 +11,6 @@ abstract public class Space {
     public int setLocation(int space) {
         int range = (space - 1) + 1;
         location = (int)(Math.random() * range) + 1;
-        // System.out.print("Animal moved to " + location + " point.");
         return location;
     }
 

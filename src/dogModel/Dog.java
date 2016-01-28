@@ -57,6 +57,17 @@ public class Dog extends Animal implements Pet {
     public void sleep() {
         System.out.println(sleep);
     } 
+    
+    @Override
+    public int roam() {
+        if (motility) {
+            setLocation(Space.space);
+            System.out.print("Dog moved to " + location + " point.");
+        } else {
+            System.out.print("Animal doesn't have the capacity to move");
+        }
+        return location;
+    }
 
     public String beFriendly() {
         return " is friendly.";
