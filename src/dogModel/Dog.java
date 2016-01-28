@@ -33,20 +33,20 @@ public class Dog extends Animal implements Pet {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String newName) {
+        this.name = newName;
     }
  
-    public void setSize(String size) {
-        this.size = size;
+    public void setSize(String newSize) {
+        this.size = newSize;
     }
     
-    public void setTrinomialName(String trinomialName) {
-        this.trinomialName = trinomialName; 
+    public void setTrinomialName(String newTrinomialName) {
+        this.trinomialName = newTrinomialName; 
     }
    
-    public void setNoise(String Noise) {
-        this.noise = noise;
+    public void setNoise(String newNoise) {
+        this.noise = newNoise;
     }
 
     @Override
