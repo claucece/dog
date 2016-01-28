@@ -5,16 +5,16 @@ public class Dog extends Animal implements Pet {
     private int id = ++numberOfDogs;
 
     public Dog() 
-       {
-        size = "medium";
-        trinomialName = "Dog";
-        noise = "Woof, Woof!";
-        food = "meat";
-        hunger = true;
-        sleep = false;
-        motility = true;
-        name = "Balto";
-       }
+        {
+         size = "medium";
+         trinomialName = "Dog";
+         noise = "Woof, Woof!";
+         food = "meat";
+         hunger = true;
+         sleep = false;
+         motility = true;
+         name = "Balto";
+        }
  
     public Dog(String startSize, 
                String startTrinomialName,
@@ -30,19 +30,19 @@ public class Dog extends Animal implements Pet {
     }    
 
     public String getName() {
-         return name;
+        return name;
     }
  
     public void setSize(String size) {
-         this.size = size;
+        this.size = size;
     }
     
     public void setTrinomialName(String trinomialName) {
-         this.trinomialName = trinomialName; 
+        this.trinomialName = trinomialName; 
     }
    
     public void setNoise(String Noise) {
-         this.noise = noise;
+        this.noise = noise;
     }
 
     @Override

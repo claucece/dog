@@ -14,6 +14,5 @@ abstract public class Space {
         return location;
     }
 
-
 }
 

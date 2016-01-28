@@ -1,5 +1,3 @@
-// package dogModel;
-
 @ClassPreamble (
     author = "Sofia Celi",
     date = "26/01/2016",
@@ -17,13 +15,13 @@ abstract public class Animal extends Space {
    
     public Animal() 
      {
-       size = "big";
-       trinomialName = "Animal";
-       noise = "animal makes noise";
-       food = "animal's food";
-       hunger = true;
-       sleep = false;
-       motility = true;
+        size = "big";
+        trinomialName = "Animal";
+        noise = "animal makes noise";
+        food = "animal's food";
+        hunger = true;
+        sleep = false;
+        motility = true;
      }
    
     public Animal(String startSize,
