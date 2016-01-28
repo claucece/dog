@@ -1,4 +1,4 @@
-package dogModel;
+// package dogModel;
 
 import java.lang.annotation.*;
 

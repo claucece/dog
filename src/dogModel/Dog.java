@@ -1,21 +1,36 @@
-package dogModel;
+// package dogModel;
 
 public class Dog extends Animal implements Pet {
-    
-    public String food = "meat";
-    public boolean hunger = true;
-    public boolean sleep = false;
+  
+    public Dog() 
+       {
+        size = "medium";
+        trinomialName = "Dog";
+        noise = "Woof, Woof!";
+        food = "meat";
+        hunger = true;
+        sleep = false;
+        motility = true;
+       }
+ 
+    // public String food = "meat";
+    // public boolean hunger = true;
+    // public boolean sleep = false;
     public int height = 640;
     public int width =  480;
-    public int space = setSpace(height, width);
+    public int space = height * width;
     public String name = "Balto";   
+    public boolean motility = true;
  
     public Dog(String startSize, 
                String startTrinomialName,
                String startNoise,
+               String startFood,
+               boolean startHunger,
+               boolean startSleep,
                boolean startMotility
                ) {
-    super(startSize, startTrinomialName, startNoise, startMotility);
+        super(startSize, startTrinomialName, startNoise, startFood, startHunger, startSleep, startMotility);
     }    
 
     private static int numberOfDogs = 0;

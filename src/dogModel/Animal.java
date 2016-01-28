@@ -1,4 +1,4 @@
-package dogModel;
+// package dogModel;
 
 @ClassPreamble (
     author = "Sofia Celi",
@@ -11,19 +11,36 @@ package dogModel;
 
 abstract public class Animal {
     
-    private String size, trinomialName, noise;
-    private boolean motility;
-       
+    public String size, noise, food;
+    public String trinomialName;
+    public boolean motility, hunger, sleep;
+   
+    public Animal() 
+     {
+       size = "big";
+       trinomialName = "Animal";
+       noise = "animal makes noise";
+       food = "animal's food";
+       hunger = true;
+       sleep = false;
+       motility = true;
+     }
+   
     public Animal(String startSize,
                String startTrinomialName,
                String startNoise,
+               String startFood, 
+               boolean startHunger,
+               boolean startSleep,
                boolean startMotility
                ) {
         size = startSize;
         trinomialName = startTrinomialName;
         noise = startNoise;
-        this.motility = motility;
-        
+        food = startFood;
+        hunger = startHunger;
+        sleep = startSleep;
+        motility = startMotility;
     }
     
     public String getTrinomialName() {
@@ -39,7 +56,7 @@ abstract public class Animal {
     }
 
     public String eat(boolean hunger, String food) {
-        if (hunger = true) {
+        if (hunger) {
         }
         return food;
     }
@@ -53,7 +70,7 @@ abstract public class Animal {
          
     public int roam(int space) {
          int location = 0;
-         if (motility = true) {
+         if (motility) {
              int range = (space - 1) + 1;    
              location = (int)(Math.random() * range) + 1;
              System.out.print("Animal moved to " + location + " point.");

@@ -1,4 +1,4 @@
-package dogModel;
+// package dogModel;
 
 public interface Pet {
     
