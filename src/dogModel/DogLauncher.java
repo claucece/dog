@@ -12,18 +12,14 @@ public class DogLauncher {
         System.out.println("The animal class is " + balto.getTrinomialName());
         System.out.println(balto.getTrinomialName() + " has a size: " + balto.getSize());
         System.out.println(balto.getTrinomialName() + " do has a name: " + balto.getName());
-        System.out.println(balto.getTrinomialName() + " barks and says: " + balto.makeNoise());
+        System.out.println(balto.getName() + " barks and says: " + balto.makeNoise());
         balto.eat();
-        System.out.println("The space that surrounds the dog is " + balto.setSpace(640, 480) + " meters");
+        System.out.println("The space that surrounds " + balto.getName() + " is " + balto.setSpace(640, 480) + " meters");
         balto.roam();
-        //System.out.print("Is " +  balto.getTrinomialName() + " sleeping? "); 
-        //balto.sleep();
-        //System.out.println("What is the space in which the dog lives? " +  balto.setSpace(balto.height, balto.width) + " meters.");
-        // balto.space;
-        //System.out.println();
-        //System.out.println(balto.getTrinomialName() + " name is: " + balto.setName(balto.name));
-        //System.out.println(balto.setName(balto.name) + balto.beFriendly());
-        //System.out.println(balto.setName(balto.name) + balto.play());
+        System.out.print("Is " +  balto.getName() + " sleeping? "); 
+        balto.sleep();
+        System.out.println(balto.getName() + balto.beFriendly());
+        System.out.println(balto.getName() + balto.play());
         //System.out.println("The id of " + balto.setName(balto.name) + " is " + balto.getID()); 
         //System.out.println("Number of dogs created so far " + Dog.getNumberOfDogs());
     }

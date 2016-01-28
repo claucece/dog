@@ -1,6 +1,8 @@
 public class Dog extends Animal implements Pet {
   
     public String name;
+    private static int numberOfDogs = 0;
+    private int id = ++numberOfDogs;
 
     public Dog() 
        {
@@ -27,10 +29,6 @@ public class Dog extends Animal implements Pet {
         name = startName;
     }    
 
-    private static int numberOfDogs = 0;
-    
-    private int id = ++numberOfDogs;
-   
     public String getName() {
          return name;
     }
@@ -65,9 +63,9 @@ public class Dog extends Animal implements Pet {
     public int roam() {
         if (motility) {
             setLocation(Space.space);
-            System.out.print("Dog moved to " + location + " point.");
+            System.out.println("Dog moved to " + location + " point.");
         } else {
-            System.out.print("Animal doesn't have the capacity to move");
+            System.out.println("Animal doesn't have the capacity to move");
         }
         return location;
     }
@@ -80,10 +78,6 @@ public class Dog extends Animal implements Pet {
         return " is playfull.";
     }
     
-    public String setName(String name) {
-        return name;
-    }
- 
     public int getID() {
         return id;
     }
