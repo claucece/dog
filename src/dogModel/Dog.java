@@ -13,9 +13,6 @@ public class Dog extends Animal implements Pet {
         motility = true;
        }
  
-    // public String food = "meat";
-    // public boolean hunger = true;
-    // public boolean sleep = false;
     public int height = 640;
     public int width =  480;
     public int space = height * width;
@@ -36,6 +33,10 @@ public class Dog extends Animal implements Pet {
     private static int numberOfDogs = 0;
     
     private int id = ++numberOfDogs;
+    
+    public void setSize(String size) {
+       this.size = size;
+    }
 
     public String beFriendly() {
         return " is friendly.";

@@ -3,8 +3,8 @@
 public class DogLauncher {
     public static void main (String[] args) {
         Dog fido = new Dog();
-        System.out.println("Class is: "+fido.getTrinomialName());
-        System.out.println("The animal class is: "+fido.getSize());
+        System.out.println("The deafult animal has a class that is: "+ fido.getTrinomialName());
+        System.out.println("Default " + fido.getTrinomialName() + "' size is "+ fido.getSize());
         Dog balto = new Dog("big", "Dog", "Ruff, Ruff!", "meat", true, false, true);
         System.out.println("The animal class is " + balto.getTrinomialName());
         System.out.println("The animal size is " + balto.getSize());
