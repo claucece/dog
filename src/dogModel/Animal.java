@@ -57,8 +57,9 @@ abstract public class Animal {
 
     public void eat() {
         if (hunger) {
-            System.out.println(food);
-        }
+            System.out.println("Animal eats" + food);
+        } else {
+            System.out.println("Animal doesn't eat");
     }
 
     abstract public void sleep();
