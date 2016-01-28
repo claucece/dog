@@ -8,9 +8,10 @@ public class DogLauncher {
         System.out.println("Default's dog size is " + fido.getSize());
         System.out.println("=====================================");
         System.out.println("Let's create a non-default new animal");
-        Dog balto = new Dog("big", "Dog", "Ruff, Ruff!", "fressen", true, false, true);
+        Dog balto = new Dog("big", "Dog", "Ruff, Ruff!", "fressen", true, false, true, "Balto");
         System.out.println("The animal class is " + balto.getTrinomialName());
-        System.out.println("The animal size is " + balto.getSize());
+        System.out.println(balto.getTrinomialName() + " has a size: " + balto.getSize());
+        System.out.println(balto.getTrinomialName() + " do has a name: " + balto.getName());
         System.out.println(balto.getTrinomialName() + " barks and says: " + balto.makeNoise());
         balto.eat();
         System.out.println("The space that surrounds the dog is " + balto.setSpace(640, 480) + " meters");

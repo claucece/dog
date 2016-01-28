@@ -1,5 +1,7 @@
 public class Dog extends Animal implements Pet {
   
+    public String name;
+
     public Dog() 
        {
         size = "medium";
@@ -9,13 +11,8 @@ public class Dog extends Animal implements Pet {
         hunger = true;
         sleep = false;
         motility = true;
+        name = "Balto";
        }
- 
-    public int height = 640;
-    public int width =  480;
-    public int space = height * width;
-    public String name = "Balto";   
-    // public boolean motility = true;
  
     public Dog(String startSize, 
                String startTrinomialName,
@@ -23,15 +20,21 @@ public class Dog extends Animal implements Pet {
                String startFood,
                boolean startHunger,
                boolean startSleep,
-               boolean startMotility
+               boolean startMotility,
+               String startName
                ) {
         super(startSize, startTrinomialName, startNoise, startFood, startHunger, startSleep, startMotility);
+        name = startName;
     }    
 
     private static int numberOfDogs = 0;
     
     private int id = ++numberOfDogs;
-    
+   
+    public String getName() {
+         return name;
+    }
+ 
     public void setSize(String size) {
          this.size = size;
     }
