@@ -1,6 +1,6 @@
 public class Dog extends Animal implements Pet {
   
-    public String name;
+    private String name;
     private static int numberOfDogs = 0;
     private int id = ++numberOfDogs;
 
@@ -13,7 +13,7 @@ public class Dog extends Animal implements Pet {
          hunger = true;
          sleep = false;
          motility = true;
-         name = "Balto";
+         name = "Fido";
         }
  
     public Dog(String startSize, 
@@ -31,6 +31,10 @@ public class Dog extends Animal implements Pet {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
  
     public void setSize(String size) {
@@ -62,7 +66,7 @@ public class Dog extends Animal implements Pet {
     @Override
     public int roam() {
         if (motility) {
-            setLocation(Space.space);
+            makeLocation(Space.space);
             System.out.println(name + " moved to " + location + " point.");
         } else {
             System.out.println("Animal doesn't have the capacity to move");

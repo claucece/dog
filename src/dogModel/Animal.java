@@ -65,7 +65,7 @@ abstract public class Animal extends Space {
    
     public int roam() {
         if (motility) {
-            setLocation(Space.space);
+            makeLocation(Space.space);
             System.out.print("Animal moved to " + location + " point.");
         } else {
             System.out.print("Animal doesn't have the capacity to move");

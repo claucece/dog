@@ -1,11 +1,12 @@
-// import dogModel.Dog;
-
 public class DogLauncher {
     public static void main (String[] args) {
         Dog fido = new Dog();
         System.out.println("Lets first create a deafult " + fido.getTrinomialName());
         System.out.println("Default's dog noise is " + fido.makeNoise());
         System.out.println("Default's dog size is " + fido.getSize());
+        System.out.println("Default's dog name is " + fido.getName());
+        fido.setName("Pirata");
+        System.out.println("Now the dog's name is " + fido.getName());
         System.out.println("=====================================");
         System.out.println("Let's create a non-default new animal");
         Dog balto = new Dog("big", "Dog", "Ruff, Ruff!", "fressen", true, false, true, "Balto");
@@ -14,7 +15,7 @@ public class DogLauncher {
         System.out.println(balto.getTrinomialName() + " do has a name: " + balto.getName());
         System.out.println(balto.getName() + " barks and says: " + balto.makeNoise());
         balto.eat();
-        System.out.println("The space that surrounds " + balto.getName() + " is " + balto.setSpace(640, 480) + " meters");
+        System.out.println("The space that surrounds " + balto.getName() + " is " + balto.makeSpace(640, 480) + " meters");
         balto.roam();
         System.out.print("Is " +  balto.getName() + " sleeping? "); 
         balto.sleep();
