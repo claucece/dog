@@ -44,11 +44,19 @@ abstract public class Animal extends Space {
     public String getTrinomialName() {
         return trinomialName;
      } 
-
+    
+    public void setTrinomialName(String newTrinomialName) {
+        this.trinomialName = newTrinomialName;
+    }
+   
     public String getSize() { 
         return size;
     }
-
+   
+    public void setSize(String newSize) {
+        this.size = newSize;
+    }
+    
     public String makeNoise() {
         return noise;
     }

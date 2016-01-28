@@ -37,18 +37,6 @@ public class Dog extends Animal implements Pet {
         this.name = newName;
     }
  
-    public void setSize(String newSize) {
-        this.size = newSize;
-    }
-    
-    public void setTrinomialName(String newTrinomialName) {
-        this.trinomialName = newTrinomialName; 
-    }
-   
-    public void setNoise(String newNoise) {
-        this.noise = newNoise;
-    }
-
     @Override
     public void eat() {
         if (hunger) {
