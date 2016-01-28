@@ -17,7 +17,7 @@ public class Dog extends Animal implements Pet {
     public int width =  480;
     public int space = height * width;
     public String name = "Balto";   
-    public boolean motility = true;
+    // public boolean motility = true;
  
     public Dog(String startSize, 
                String startTrinomialName,
@@ -35,9 +35,26 @@ public class Dog extends Animal implements Pet {
     private int id = ++numberOfDogs;
     
     public void setSize(String size) {
-       this.size = size;
+         this.size = size;
+    }
+    
+    public void setTrinomialName(String trinomialName) {
+         this.trinomialName = trinomialName; 
+    }
+   
+    public void setNoise(String Noise) {
+         this.noise = noise;
     }
 
+    @Override
+    public void eat() {
+        if (hunger) {
+            System.out.println("Dog eats " + food);
+        } else {
+            System.out.println("Dog doesn't eat");
+        }
+    }
+    
     public String beFriendly() {
         return " is friendly.";
     }

@@ -55,14 +55,16 @@ abstract public class Animal {
         return noise;
     }
 
-    public String eat(boolean hunger, String food) {
+    public void eat() {
         if (hunger) {
+            System.out.println(food);
         }
-        return food;
     }
 
     abstract public void sleep();
-    
+   
+    // create new class with this two methods 
+ 
     public int setSpace(int height, int width) {
          int space = height * width;
          return space;
