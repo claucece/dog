@@ -48,9 +48,9 @@ public class Dog extends Animal implements Pet {
     @Override
     public void eat() {
         if (hunger) {
-            System.out.println("Dog eats " + food);
+            System.out.println(name + " eats " + food);
         } else {
-            System.out.println("Dog doesn't eat");
+            System.out.println(name + " doesn't eat");
         }
     }
    
@@ -63,7 +63,7 @@ public class Dog extends Animal implements Pet {
     public int roam() {
         if (motility) {
             setLocation(Space.space);
-            System.out.println("Dog moved to " + location + " point.");
+            System.out.println(name + " moved to " + location + " point.");
         } else {
             System.out.println("Animal doesn't have the capacity to move");
         }

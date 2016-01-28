@@ -20,7 +20,8 @@ public class DogLauncher {
         balto.sleep();
         System.out.println(balto.getName() + balto.beFriendly());
         System.out.println(balto.getName() + balto.play());
-        //System.out.println("The id of " + balto.setName(balto.name) + " is " + balto.getID()); 
-        //System.out.println("Number of dogs created so far " + Dog.getNumberOfDogs());
+        System.out.println("=====================================");
+        System.out.println("The id of " + balto.getName() + " was " + balto.getID()); 
+        System.out.println("Number of dogs created so far " + Dog.getNumberOfDogs());
     }
 }
