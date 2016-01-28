@@ -2,10 +2,10 @@
 
 public interface Pet {
     
-    public abstract String setName(String name);
+    public String setName(String name);
      
-    public abstract String beFriendly();
+    public String beFriendly();
 
-    public abstract String play();
+    public String play();
 
 } 
