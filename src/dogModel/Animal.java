@@ -9,7 +9,7 @@
     reviewers = {"Cris"}
 )
 
-abstract public class Animal {
+abstract public class Animal extends Space {
     
     public String size, noise, food;
     public String trinomialName;
@@ -60,25 +60,26 @@ abstract public class Animal {
             System.out.println("Animal eats" + food);
         } else {
             System.out.println("Animal doesn't eat");
+        }
     }
 
     abstract public void sleep();
    
     // create new class with this two methods 
  
-    public int setSpace(int height, int width) {
-         int space = height * width;
-         return space;
-    }     
+    // public int setSpace(int height, int width) {
+    //     int space = height * width;
+    //     return space;
+    // }     
          
-    public int roam(int space) {
-         int location = 0;
-         if (motility) {
-             int range = (space - 1) + 1;    
-             location = (int)(Math.random() * range) + 1;
-             System.out.print("Animal moved to " + location + " point.");
-         }
-         return location;
-    }
+    // public int roam(int space) {
+    //     int location = 0;
+    //     if (motility) {
+    //         int range = (space - 1) + 1;    
+    //         location = (int)(Math.random() * range) + 1;
+    //         System.out.print("Animal moved to " + location + " point.");
+    //     }
+    //     return location;
+    //  }
          
 }

@@ -78,9 +78,4 @@ public class Dog extends Animal implements Pet {
         return numberOfDogs;
     }
    
-    @Override 
-        public void sleep() { 
-        System.out.println(sleep);
-    }
-   
 }
