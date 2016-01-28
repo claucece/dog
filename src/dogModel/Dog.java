@@ -1,5 +1,3 @@
-// package dogModel;
-
 public class Dog extends Animal implements Pet {
   
     public Dog() 
@@ -54,7 +52,12 @@ public class Dog extends Animal implements Pet {
             System.out.println("Dog doesn't eat");
         }
     }
-    
+   
+    @Override
+    public void sleep() {
+        System.out.println(sleep);
+    } 
+
     public String beFriendly() {
         return " is friendly.";
     }
