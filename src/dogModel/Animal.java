@@ -14,7 +14,7 @@ abstract public class Animal extends Space {
     public boolean motility, hunger, sleep;
    
     public Animal() 
-     {
+      {
         size = "big";
         trinomialName = "Animal";
         noise = "animal makes noise";
@@ -22,7 +22,7 @@ abstract public class Animal extends Space {
         hunger = true;
         sleep = false;
         motility = true;
-     }
+      }
    
     public Animal(String startSize,
                String startTrinomialName,

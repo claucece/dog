@@ -5,8 +5,8 @@
 
 abstract public class Space {
 
-    static int space = 0; 
-    int location = 0;
+    static int space; 
+    int location;
 
     public int makeSpace(int height, int width) {
         space = height * width;

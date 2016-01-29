@@ -1,7 +1,7 @@
 public class Dog extends Animal implements Pet {
   
     private String name;
-    private static int numberOfDogs = 0;
+    private static int numberOfDogs;
     private int id = ++numberOfDogs;
 
     public Dog() 
