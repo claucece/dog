@@ -16,6 +16,7 @@ public class DogLauncher {
         System.out.println(balto.getName() + " barks and says: " + balto.makeNoise());
         balto.eat();
         Space newAnimalSpace = new Space();
+        newAnimalSpace.makeSpace(640, 480);
         balto.roam(newAnimalSpace);
         System.out.println("The space that surrounds " + balto.getName() + " is " + newAnimalSpace.makeSpace(640, 480) + " meters");
         System.out.print("Is " +  balto.getName() + " sleeping? "); 

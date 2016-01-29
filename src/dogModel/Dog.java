@@ -55,7 +55,7 @@ public class Dog extends Animal implements Pet {
     @Override
         public void roam(Space animalSpace) {
             if (motility) {
-                animalSpace.makeLocation(animalSpace.space);
+                animalSpace.makeLocation(Space.space);
                 System.out.println(name + " moved to " + animalSpace.location + " point.");
             } else {
                 System.out.println("Animal doesn't have the capacity to move");
