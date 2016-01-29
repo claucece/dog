@@ -7,7 +7,7 @@
     reviewers = {"Cris"}
 )
 
-abstract public class Animal extends Space {
+abstract public class Animal {
     
     public String size, noise, food;
     public String trinomialName;
@@ -43,7 +43,7 @@ abstract public class Animal extends Space {
     
     public String getTrinomialName() {
         return trinomialName;
-     } 
+    } 
     
     public void setTrinomialName(String newTrinomialName) {
         this.trinomialName = newTrinomialName;
@@ -71,14 +71,13 @@ abstract public class Animal extends Space {
 
     abstract public void sleep();
    
-    public int roam() {
+    public void roam(Space animalSpace) {
         if (motility) {
-            makeLocation(Space.space);
-            System.out.print("Animal moved to " + location + " point.");
+            animalSpace.makeLocation(animalSpace.space);
+            System.out.print("Animal moved to " + animalSpace.location + " point.");
         } else {
             System.out.print("Animal doesn't have the capacity to move");
         }  
-        return location;
     }
          
 }

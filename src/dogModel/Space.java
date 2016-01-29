@@ -3,11 +3,11 @@
 // lets define them: DOG: set in grid, turn-left/right, advance, current square, facing wall, display?
 // GRID: square (could be this space -start and finish-), display 
 
-abstract public class Space {
+public class Space {
 
     static int space; 
     int location;
-
+    
     public int makeSpace(int height, int width) {
         space = height * width;
         return space;
