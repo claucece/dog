@@ -1,5 +1,7 @@
 // this is too simple. Maybe I should create a grid for animal to move in
 // Should give animal specific things as move left, right, advance, etc. 
+// lets define them: DOG: set in grid, turn-left/right, advance, current square, facing wall, display?
+// GRID: square (could be this space -start and finish-), display 
 
 abstract public class Space {
 
