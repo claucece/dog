@@ -1,3 +1,6 @@
+// this is too simple. Maybe I should create a grid for animal to move in
+// Should give animal specific things as move left, right, advance, etc. 
+
 abstract public class Space {
 
     static int space = 0; 
