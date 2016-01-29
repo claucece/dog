@@ -6,6 +6,7 @@ public class Dog extends Animal implements Pet {
 
     public Dog() 
         {
+         System.out.println("And the facts for the new dog are...");
          size = "medium";
          trinomialName = "Dog";
          noise = "Woof, Woof!";
