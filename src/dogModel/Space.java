@@ -14,7 +14,7 @@ public class Space {
     }
     
     public int makeLocation(int space) {
-        int range = (space - 1) + 1;
+        int range = (this.space - 1) + 1;
         location = (int)(Math.random() * range) + 1;
         return location;
     }
