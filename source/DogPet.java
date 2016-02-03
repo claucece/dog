@@ -1,10 +1,11 @@
 public class DogPet {
  
-    private String size, noise, food, breed;
-    private int id;
+    private String noise, breed, id;
+    private Size size;
+    private Food food;
     private double price;
 
-    public DogPet(String size, String noise, String food, String breed, int id, double price) {
+    public DogPet(Size size, String noise, Food food, String breed, String id, double price) {
         this.size = size;
         this.noise = noise;
         this.food = food;
@@ -13,7 +14,7 @@ public class DogPet {
         this.id = id;
     }
 
-    public String getSize() {
+    public Size getSize() {
         return size;
     }
 
@@ -21,7 +22,7 @@ public class DogPet {
         return noise;
     }
 
-    public String getFood() {
+    public Food getFood() {
         return food;
     }
 
@@ -29,7 +30,7 @@ public class DogPet {
         return breed;
     }
     
-    public int getId() {
+    public String getId() {
         return id;
     }
 
