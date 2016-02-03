@@ -35,13 +35,14 @@ public class DogLauncher {
         Inventory dogInventory = new Inventory();
         initializeInventory(dogInventory);
        
-        DogPet whatCustomerWants = new DogPet(Size.BIG, "Ruff, Ruff!", Food.FISH, "Cocker Spaniel", "1", 0);
+        DogPetSpec whatCustomerWants = new DogPetSpec(Size.BIG, "Ruff, Ruff!", Food.FISH, "Cocker Spaniel");
         List<DogPet> matchingDogs = dogInventory.search(whatCustomerWants);
         if (!matchingDogs.isEmpty()) {
             System.out.println("You may like this dog:");
             for (Iterator<DogPet> i = matchingDogs.iterator(); i.hasNext();) {
                  DogPet dog = i.next();
-                 System.out.println("We have a dog which size is " + dog.getSize() + " , it makes this noise " +  dog.getNoise() + "\nIt eats " + dog.getFood() + " , its breed is " + dog.getBreed() + " and its price is: " + dog.getPrice());
+                 DogPetSpec spec = dog.getSpec();
+                 System.out.println("We have a dog which size is " + spec.getSize() + " , it makes this noise " +  spec.getNoise() + "\nIt eats " + spec.getFood() + " , its breed is " + spec.getBreed() + " and its price is: " + dog.getPrice());
             }
         } else {
             System.out.println("No match");
@@ -49,10 +50,10 @@ public class DogLauncher {
         }
 
     private static void initializeInventory(Inventory inventory) {
-    inventory.addDogPet(Size.BIG, "Ruff, Ruff!", Food.FISH, "Cocker Spaniel", "1", 500.12);
-    inventory.addDogPet(Size.SMALL, "Woof, woof!", Food.MEAT, "Beagle", "2", 600.23);
-    inventory.addDogPet(Size.MEDIUM, "Ruff!", Food.FRESSEN, "Schnauzer", "3", 400.34);
-    inventory.addDogPet(Size.SMALL, "Woof!", Food.MEAT, "Poodle", "4", 500.45);
+    inventory.addDogPet("1", 500.12, new DogPetSpec(Size.BIG, "Ruff, Ruff!", Food.FISH, "Cocker Spaniel"));
+    inventory.addDogPet("2", 600.23, new DogPetSpec(Size.SMALL, "Woof, woof!", Food.MEAT, "Beagle"));
+    inventory.addDogPet("3", 400.34, new DogPetSpec(Size.MEDIUM, "Ruff!", Food.FRESSEN, "Schnauzer"));
+    inventory.addDogPet("4", 500.45, new DogPetSpec(Size.SMALL, "Woof!", Food.MEAT, "Poodle"));
   }
 
 }

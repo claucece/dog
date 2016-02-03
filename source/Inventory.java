@@ -10,13 +10,11 @@ public class Inventory {
         dogs = new LinkedList<DogPet>();
     }
 
-    public void addDogPet(Size size, 
-                    String noise, 
-                    Food food, 
-                    String breed, 
+    public void addDogPet( 
                     String id,
-                    double price) {
-        DogPet dog = new DogPet(size, noise, food, breed, id, price);
+                    double price,
+                    DogPetSpec spec) {
+        DogPet dog = new DogPet(id, price, spec);
         dogs.add(dog);
     }
 
@@ -31,23 +29,25 @@ public class Inventory {
     }
 
     
-    public List<DogPet> search(DogPet searchDog) {
+    public List<DogPet> search(DogPetSpec searchSpec) {
         List<DogPet> matchingDogs = new LinkedList<DogPet>();
         for (Iterator<DogPet> i = dogs.iterator(); i.hasNext();) {
             DogPet dog = i.next();
-            if (searchDog.getSize() != dog.getSize())
-            continue;
-            String noise = searchDog.getNoise().toLowerCase();
-            if ((noise != null) && (!noise.equals("")) && 
-                (!noise.equals(dog.getNoise().toLowerCase())))
-            continue;
-            if (searchDog.getFood() != dog.getFood())
-            continue;
-            String breed = searchDog.getBreed().toLowerCase();
-            if ((breed != null) && (!breed.equals("")) &&
-                (!breed.equals(dog.getBreed().toLowerCase())))
-            continue;
-            matchingDogs.add(dog);
+            if (dog.getSpec().matches(searchSpec))
+                matchingDogs.add(dog);
+            // if (searchDog.getSize() != dog.getSize())
+            // continue;
+            // String noise = searchDog.getNoise().toLowerCase();
+            // if ((noise != null) && (!noise.equals("")) && 
+            //    (!noise.equals(dog.getNoise().toLowerCase())))
+            // continue;
+            // if (searchDog.getFood() != dog.getFood())
+            // continue;
+            // String breed = searchDog.getBreed().toLowerCase();
+            // if ((breed != null) && (!breed.equals("")) &&
+            //    (!breed.equals(dog.getBreed().toLowerCase())))
+            // continue;
+            // matchingDogs.add(dog);
         }
         return matchingDogs;
     }

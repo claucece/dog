@@ -1,41 +1,25 @@
 public class DogPet {
  
-    private String noise, breed, id;
-    private Size size;
-    private Food food;
+    private String id;
     private double price;
+    DogPetSpec spec;
 
-    public DogPet(Size size, String noise, Food food, String breed, String id, double price) {
-        this.size = size;
-        this.noise = noise;
-        this.food = food;
-        this.breed  = breed;
+    public DogPet(String id, double price, DogPetSpec spec) {
         this.price = price;
         this.id = id;
+        this.spec = spec;
     }
 
-    public Size getSize() {
-        return size;
-    }
-
-    public String getNoise() {
-        return noise;
-    }
-
-    public Food getFood() {
-        return food;
-    }
-
-    public String getBreed() {
-        return breed;
-    }
-    
     public String getId() {
         return id;
     }
 
     public double getPrice() {
         return price;
+    }
+ 
+    public DogPetSpec getSpec() {
+        return spec;
     }
 
 }
