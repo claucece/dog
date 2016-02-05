@@ -31,23 +31,10 @@ public class Inventory {
     
     public List<DogPet> search(DogPetSpec searchSpec) {
         List<DogPet> matchingDogs = new LinkedList<DogPet>();
-        for (Iterator<DogPet> i = dogs.iterator(); i.hasNext();) {
-            DogPet dog = i.next();
+        for (DogPet i : dogs) { //for-each loop. Looks better.
+            DogPet dog = i;
             if (dog.getSpec().matches(searchSpec))
                 matchingDogs.add(dog);
-            // if (searchDog.getSize() != dog.getSize())
-            // continue;
-            // String noise = searchDog.getNoise().toLowerCase();
-            // if ((noise != null) && (!noise.equals("")) && 
-            //    (!noise.equals(dog.getNoise().toLowerCase())))
-            // continue;
-            // if (searchDog.getFood() != dog.getFood())
-            // continue;
-            // String breed = searchDog.getBreed().toLowerCase();
-            // if ((breed != null) && (!breed.equals("")) &&
-            //    (!breed.equals(dog.getBreed().toLowerCase())))
-            // continue;
-            // matchingDogs.add(dog);
         }
         return matchingDogs;
     }

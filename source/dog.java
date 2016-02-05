@@ -4,11 +4,6 @@ public class Dog extends Animal implements Pet {
     private static int numberOfDogs;
     private int id = ++numberOfDogs;
 
-    // size, noise and food can be enums
-    // id works as serial number. Must implement breed. 
-    // need an inventory or something like that, if I want customer to search
-    // must be: add dog, get dog, search
-
     public Dog() 
         {
          System.out.println("And the facts for the new dog are...");

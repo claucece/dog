@@ -31,7 +31,7 @@ public class DogLauncher {
         System.out.println("Number of dogs created so far " + Dog.getNumberOfDogs());
         System.out.println("=====================================");
         System.out.println("Now that you know dogs do exist... don't you want to buy some?");
-        
+
         Inventory dogInventory = new Inventory();
         initializeInventory(dogInventory);
        
@@ -42,11 +42,15 @@ public class DogLauncher {
             for (Iterator<DogPet> i = matchingDogs.iterator(); i.hasNext();) {
                  DogPet dog = i.next();
                  DogPetSpec spec = dog.getSpec();
-                 System.out.println("We have a dog which size is " + spec.getSize() + " , it makes this noise " +  spec.getNoise() + "\nIt eats " + spec.getFood() + " , its breed is " + spec.getBreed() + " and its price is: " + dog.getPrice());
+                 System.out.println("We have a dog which size is " + spec.getSize() + ", it makes this noise " +  spec.getNoise() + "\nIt eats " + spec.getFood() + ", its breed is " + spec.getBreed() + " and its price is: " + dog.getPrice());
             }
         } else {
             System.out.println("No match");
         }
+
+        DogFoodFacts dogFood = new DogFoodFacts.Builder("Purina", "big").calories(100).fat(50).carbohydrate(27).build();
+        System.out.println("Your dog needs some food");
+        System.out.println("The food that you'll like is " + dogFood.getBrand() + ", its size is " + dogFood.getSize() + ". \nIt has " + dogFood.getCalories() + " calories, " + dogFood.getFat() + " fat, and " + dogFood.getCarbohydrate() + " carbohydrates");
         }
 
     private static void initializeInventory(Inventory inventory) {
