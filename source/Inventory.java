@@ -30,7 +30,7 @@ public class Inventory {
 
     
     public List<DogPet> search(DogPetSpec searchSpec) {
-        List<DogPet> matchingDogs = new LinkedList<DogPet>();
+        List<DogPet> matchingDogs = new LinkedList<>();
         for (DogPet i : dogs) { //for-each loop. Looks better.
             DogPet dog = i;
             if (dog.getSpec().matches(searchSpec))
