@@ -11,7 +11,13 @@ abstract public class Animal {
     
     public String size, noise, food;
     public String trinomialName;
-    public boolean motility, hunger, sleep;
+    public boolean /*@ spec_public @*/ motility;
+    public boolean hunger, sleep;
+
+    //@ public invariant motility = true;
+ 
+    //@ assignable motility;
+    //@ ensures motily = true;
    
     public Animal() 
       {
