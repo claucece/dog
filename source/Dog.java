@@ -13,7 +13,7 @@ public class Dog extends Animal implements Pet {
          food = "meat";
          hunger = true;
          sleep = false;
-         motility;
+         motility = true;
          name = "Fido";
         }
  
